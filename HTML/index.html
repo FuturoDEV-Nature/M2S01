@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <title>Meu primeiro website</title>
+
+        <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, explicabo!">
+        <meta name="keywords" content="html, html5, css">
+    </head>
+    <body>
+        <header>
+            <img 
+                src="https://lab365-admin.hml.sesisenai.org.br/javax.faces.resource/img/logo-lab.png" 
+                alt="Logotipo - LAB365 " 
+                height="80px"
+            >
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="artigos.html">Artigos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+
+        <aside>
+            <h3>Postagens recentes</h3>
+            <ul>
+                <li>
+                    <a href="#">Introdução HTML</a>
+                </li>
+                <li>
+                    <a href="#">Introdução CSS</a>
+                </li>
+                <li>
+                    <a href="#">Javascript Avançado</a>
+                </li>
+            </ul>
+            <h3>Produtos</h3>
+            <ul>
+                <li>
+                    <a href="#">Introdução HTML</a>
+                </li>
+                <li>
+                    <a href="#">Introdução CSS</a>
+                </li>
+                <li>
+                    <a href="#">Javascript Avançado</a>
+                </li>
+            </ul>
+        </aside>
+        
+        <main>
+            <section id="hero" style="width: 100%; padding: 32px; background: #8e84ff; color: #f5f4ff;">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati ea quasi tempora ipsa fugit, modi nam laborum ullam temporibus!</p>
+                <button type="button" onclick="onClick()">Clique aqui para saber mais...</button>
+            </section>
+
+
+            <section id="artigos-recentes" style="margin-top: 32px; margin-bottom: 32px;">
+                <h2>Artigos recentes</h2>
+                <article style="width: fit-content; background: #f1f0fc; margin-bottom: 16px;">
+                    <h3>Introdução a HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eum...</p>
+                    <a href="artigo.html">Ver mais...</a>
+                </article>
+                <article style="width: fit-content; background: #f1f0fc; margin-bottom: 16px;">
+                    <h3>Introdução a CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eum...</p>
+                    <a href="artigo.html">Ver mais...</a>
+                </article>
+                <article style="width: fit-content; background: #f1f0fc; margin-bottom: 16px;">
+                    <h3>Introdução a Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eum...</p>
+                    <a href="artigo.html">Ver mais...</a>
+                </article>
+            </section>
+        </main>
+
+
+        <footer style="width: 100%; background: #f1f0fc; padding: 32px;">
+            <p>Lorem ipsum dolor sit amet @Copyright 2024 adipisicing elit. Quibusdam, facere!</p>
+        </footer>
+
+
+        <script>
+            var texto = 'Elemento clicado!'
+            
+            function onClick() {
+                console.log(texto)
+            }
+        </script>
+    </body>
+</html>
