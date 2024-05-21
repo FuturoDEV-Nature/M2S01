@@ -5,6 +5,6 @@ Este repositório contém todos os arquivos utilizados durante a aula da semana 
 
 ## Aulas
 
-- [1º Introdução a HTML](/M2S01/HTML/)
+- [1º Introdução a HTML](/HTML/)
 - [2º CSS]()
 - [3º HTML + CSS e dúvidas]()
