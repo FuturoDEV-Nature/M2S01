@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+p {
+    color: red;
+    /* margin: 0; */
+    margin-bottom: 12px; 
+}
+
+#box {
+    width: 250px;
+    height: 250px;
+    background: green;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    background: rgba(115, 51, 255, 0.20);
+    border-radius: 10px;
+}
+/* Selecionando todos elementos dentro da div */
+.container p {
+    color: black;
+}
+/* Selecionando elemento do primeiro nivel */
+.container > p {
+    color: red;
+    font-size: 2rem; /** 1rem = 16px => 2rem = 32px */ 
+}
+
+img[src] {
+    border: 5px solid red;
+}
+
+input[type="text"] {
+    border: 2px solid gray;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+.form-control {
+    height: 56px;
+    min-width: 500px;
+    border: 1px solid gray;
+    outline: 0;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-control:hover {
+    border-color: green;
+}
+
+.form-control:focus {
+    border-color: red;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    height: 56px;
+    padding: 16px;
+    background: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.button:not(:disabled):hover {
+    filter: opacity(0.5);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
