@@ -1,0 +1,102 @@
+:root {
+    --minha-variavel-vermelha: red;
+    --tamanho-de-fonte-base: 10px;
+    --padding-size: 12px;
+    color-scheme: light dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 120vh;
+    background: #fefefe;
+}
+html {
+    font-size: 16px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+strong {
+    font-size: 2rem; /** 1rem = 16px= 32px  */
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 50vw;
+    height: 250px;
+    background: lightblue;
+}
+
+.container-child {
+    width: 80%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.box, .childs {
+    height: 150px;
+    width: 150px;
+    border: 5px dashed #cacaca;
+}
+
+.box div p {
+    color: red;
+}
+
+
+.childs > p {
+    color: blue;
+}
+
+/* .childs > p > span {
+    color: blue;
+} */
+
+p + strong {
+    display: block;
+    margin-top: 16px;
+}
+
+.childs h1 ~ p {
+    color: yellowgreen;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+a:visited {
+    color: gray;
+}
+
+label {
+    padding: 16px;
+    background: #cecece;
+    border-radius: 5px;
+    font-size: var(--tamanho-de-fonte-base);
+}
+
+input:checked + label {
+    background: green;
+    color: var(--minha-variavel-vermelha);
+}
+input:checked + label::before {
+    content: "🆗";
+}
+
+h5 {
+    color: light-dark(blue, var(--minha-variavel-vermelha));
+}
